@@ -1,0 +1,24 @@
+
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  only:
+    - master
+  script:     
+    - "cd Project.WebApi"
+    - "dotnet build"
+
+test:
+  stage: test
+  only:
+    - master
+  script:     
+    - "cd Project.UnitTest"
+    - "dotnet test"
+
+
+

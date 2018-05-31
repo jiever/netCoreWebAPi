@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="MySql.Data" Version="6.10.6" />
+    <PackageReference Include="sqlSugarCore" Version="4.6.4.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Common\Project.Common.csproj" />
+    <ProjectReference Include="..\Project.IDAL\Project.IDAL.csproj" />
+    <ProjectReference Include="..\Project.Model\Project.Model.csproj" />
+  </ItemGroup>
+
+</Project>
